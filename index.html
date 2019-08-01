@@ -16,14 +16,12 @@
 </head>
 
 <body>
+    <h1 id="text"></h1>
+    <img id='img' src='https://doc.quickapp.cn/assets/images/logo.png'>
     <script>
-        console.log('initpage')
         system.onmessage = function (data) {
-            console.log('message received: ' + data)
-            document.write(`<h1>'message received: ${data}</p>`);
-            let node = document.createElement("img");
-            node.src = 'https://doc.quickapp.cn/assets/images/logo.png'
-            document.getElementsByTagName('body')[0].appendChild(node)
+            document.getElementById('text').innerText = `message received: ${data}`
+            document.getElementById('img').src = data
         }
     </script>
 </body>
