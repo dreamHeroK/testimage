@@ -9,12 +9,13 @@
 </head>
 
 <body>
-    测试H5页面
+    
     <script>
         console.log('initpage')
-        // system.onmessage = function (data) {
-        //     console.log('message received: ' + data)
-        // }
+        system.onmessage = function (data) {
+            console.log('message received: ' + data)
+            document.write(`<h1>'message received: ${data}</p>`);
+        }
     </script>
 </body>
 
