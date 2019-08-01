@@ -14,9 +14,9 @@
         system.onmessage = function (data) {
             console.log('message received: ' + data)
             document.write(`<h1>'message received: ${data}</p>`);
-                let node=document.createElement("img");
-                node.src="https://upload.jianshu.io/users/upload_avatars/11721731/5d75530a-e11f-4a03-b28e-7faf846db092.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120"
-            document.getElementsByName('body')[0].appendChild(node)
+            let node = document.createElement("img");
+            node.src = data
+            document.getElementsByTagName('body')[0].appendChild(node)
         }
     </script>
 </body>
